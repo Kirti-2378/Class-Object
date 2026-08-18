@@ -1,37 +1,23 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ClassWork1
+namespace OOps
 {
-    internal class Mobile // It is a Class 
+    internal class Program // CLass Name 
     {
-        int Price;
-        string name;
-        string Color;
-
-        public void calling()
+        static void Main1(string[] args)
         {
-            Console.WriteLine("Voice msg");
+            Car myCar = new Car(); 
+            Console.WriteLine(myCar.Name);
+            Console.WriteLine(myCar.Price);
         }
-        public void Chatting()
-        {
-            Console.WriteLine("Chat");
-        }
-        public void VideoCalling()
-        {
-            Console.WriteLine("VideoCalling");
-        }
-        static void Main(string[] args)
-        {
-            Mobile m = new Mobile();
-            m.Price = 75000;
-            m.name = "Nothing";
-            m.Color = "White";
-
-            Console.WriteLine(m.Price);
-            Console.WriteLine(m.name);
-            Console.WriteLine(m.Color);
-
-            m.calling(); m.Chatting(); m.VideoCalling();
-        }
+    }
+    class Car
+    {
+        public string Name = "Toyota"; 
+        public int Price = 125000;
     }
 }
